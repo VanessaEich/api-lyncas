@@ -1,0 +1,355 @@
+@font-face {
+  src: url("../fontes/MerriweatherSans-Regular.ttf");
+  font-family: MerriweatherRegular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: MerriweatherRegular;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.item2 {
+  width: calc(100% - 200px);
+  height: 100%;
+  float: right;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 30px 30px 0 30px;
+  background-color: white;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.titulo {
+  display: flex;
+  width: 100%;
+  margin: 30px 30px 0px 30px;
+}
+
+.user {
+  color: rgb(43, 42, 42);
+  font-size: 20px;
+}
+
+.box-search {
+  display: flex;
+  margin-left: auto;
+  width: 50%;
+  height: 100%;
+}
+
+.caixa2 {
+  display: flex;
+  margin-right: auto;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.busca {
+  align-self: center;
+  height: 30px;
+  width: 90%;
+}
+
+input:placeholder-shown {
+  width: 900%;
+  height: 90%;
+  align-self: center;
+}
+
+.btadicionar {
+  width: 100px;
+  background-color: #0f1b35;
+  border-radius: 40px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.btadicionar:hover {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+.btlupa {
+  align-self: center;
+  height: 25px;
+  align-content: center;
+  margin: 15px 15px 15px 15px;
+  padding: 5px;
+  border-right: 1px solid black;
+  background-color: white;
+}
+
+.bx-search {
+  font-size: 15px;
+}
+
+.areatabela {
+  display: flex;
+  width: 100%;
+  margin: 0px 30px 30px 30px;
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-spacing: 0 10px;
+}
+
+.tabela thead {
+  font-size: 13px;
+  color: rgb(131, 130, 130);
+}
+
+.hnome {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-right: none;
+}
+
+.hnome>i {
+  margin-left: auto;
+}
+
+.hfone {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-right: none;
+  border-left: none;
+}
+
+.hfone>i {
+  margin-left: auto;
+}
+
+.hemail {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-right: none;
+  border-left: none;
+}
+
+.hemail>i {
+  margin-left: auto;
+}
+
+.hdtnasc {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-right: none;
+  border-left: none;
+}
+
+.hdtnasc>i {
+  margin-left: auto;
+}
+
+.hstatus {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-right: none;
+  border-left: none;
+}
+
+.hstatus>i {
+  margin-left: auto;
+}
+
+.hacoes {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+  border: 1px solid #f9f9f9;
+  border-left: none;
+}
+
+.hacoes>i {
+  margin-left: auto;
+}
+
+.tabela tbody {
+  color: rgb(131, 130, 130);
+}
+
+.tabela tbody::before {
+  content: "-";
+  display: block;
+  line-height: 2px;
+  color: transparent;
+}
+
+.tabela td {
+  background-color: #f9f9f9;
+  font-size: 12px;
+}
+
+.dnome {
+  display: flex;
+  align-items: center;
+  padding: 13px 9px 13px 9px;
+}
+
+#usuario {
+  display: flex;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.nometb {
+  display: flex;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.dfone {
+  display: flex;
+  padding: 13px 9px 13px 9px;
+}
+
+.demail {
+  display: flex;
+  padding: 13px 9px 13px 9px;
+  align-items: center;
+}
+
+.ddtnasc {
+  display: flex;
+  padding: 13px 9px 13px 9px;
+  align-items: center;
+}
+
+.dstatus {
+  display: flex;
+  padding: 13px 9px 13px 9px;
+}
+
+.btnativo {
+  color: rgb(3, 213, 155);
+  background-color: rgb(225, 253, 241);
+  width: 50%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.btInativo {
+  color: rgb(235, 77, 37);
+  background-color: rgb(250, 229, 229);
+  width: 50%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.dacoes {
+  display: flex;
+  padding: 13px 9px 13px 9px;
+  align-items: center;
+}
+
+.bx-edit {
+  font-size: 20px;
+  color: rgb(128, 17, 128);
+}
+
+.bxs-trash-alt {
+  font-size: 20px;
+  color: rgb(128, 17, 128);
+}
+
+@media screen and (max-width: 750px) {
+  .titulo {
+    flex-direction: column;
+    margin: 15px 0px 0px 15px;
+  }
+
+  .user {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .box2 {
+    margin: 15px 15px 0 15px;
+  }
+
+  .box-search {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .caixa2 {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 3px;
+  }
+
+  .areatabela {
+    margin: 0px 15px 15px 15px;
+  }
+
+  input:placeholder-shown {
+    font-size: 13px;
+    width: 60%;
+  }
+
+  .btadicionar {
+    height: 25px;
+    margin-left: auto;
+  }
+
+  .busca {
+    height: 10px;
+  }
+
+  .tabela thead {
+    font-size: 11px;
+  }
+
+  .tabela td,
+  .nometb {
+    font-size: 10px;
+  }
+}

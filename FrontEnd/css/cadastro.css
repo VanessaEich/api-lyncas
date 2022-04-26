@@ -1,0 +1,170 @@
+@font-face {
+  src: url("../fontes/MerriweatherSans-Regular.ttf");
+  font-family: MerriweatherRegular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: MerriweatherRegular;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.item2 {
+  width: calc(100% - 200px);
+  height: 100%;
+  float: right;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 30px 30px 0 30px;
+  background-color: white;
+}
+
+.user {
+  color: rgb(43, 42, 42);
+  padding: 30px 0px 30px 30px;
+  font-size: 20px;
+}
+
+.areacadastro {
+  width: 100%;
+  margin: 0px 40px 0px 40px;
+}
+
+.cadastro {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7px;
+  color: rgb(43, 42, 42);
+}
+
+.campo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo>label {
+  font-size: 13px;
+  padding: 5px 5px 5px 0;
+}
+
+.campo>input {
+  height: 35px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#email {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.ativo {
+  display: flex;
+  flex-direction: column;
+}
+
+.at1 {
+  display: flex;
+  align-items: center;
+}
+
+#check2 {
+  display: flex;
+}
+
+.lbativo {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.cadastrar {
+  padding: 7px 7px 7px 7px;
+  background-color: #0f1b35;
+  color: white;
+  width: 100px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition-duration: 0.4s;
+}
+
+#validacao {
+  color: red;
+  font-size: 10px;
+}
+
+:disabled {
+  background-color: red;
+}
+
+.cadastrar:hover {
+  background-color: #7089be;
+  cursor: pointer;
+}
+
+.cadastrar:active {
+  transform: scale(0.85);
+}
+
+@media screen and (max-width: 750px) {
+
+  .user {
+    font-size: 15px;
+    padding: 15px 0px 0px 15px;
+  }
+
+  .box2 {
+    margin: 15px 15px 0 15px;
+  }
+
+  .cadastro {
+    grid-gap: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campo>label {
+    font-size: 11px;
+  }
+
+  .campo>input {
+    height: 20px;
+  }
+
+  .lbativo,
+  .cadastrar {
+    font-size: 10px;
+  }
+
+  .cadastrar {
+    width: 75px;
+  }
+
+  .areacadastro {
+    margin: 20px 20px 0px 20px;
+  }
+}

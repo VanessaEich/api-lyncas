@@ -1,0 +1,90 @@
+.item1 {
+  background: #0f1b35;
+  width: 200px;
+  height: 100vh;
+  float: left;
+  position: fixed;
+}
+
+.logo>img {
+  width: 75%;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  margin-top: 10px;
+  width: 200px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 200px;
+}
+
+a[class="navbar"] {
+  display: flex;
+  color: whitesmoke;
+  padding: 0.5rem 0.4rem;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+a[class="navbar"]:hover {
+  background-color: rgb(176, 224, 230);
+  color: black;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bx {
+  margin-right: 10%;
+  font-size: 1.3rem;
+}
+
+.bx-chevron-right {
+  margin-left: 2.5rem;
+}
+
+#btnClose {
+  display: flex;
+  padding: 5px;
+  background-color: #0f1b35;
+  color: #fff;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.effect {
+  transition: margin 0.5s;
+}
+
+@media (min-width: 750px) {
+  #btnClose {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .item1,
+  nav,
+  ul {
+    display: inline;
+    position: absolute;
+  }
+
+  #btnClose {
+    margin-top: 80px;
+  }
+}

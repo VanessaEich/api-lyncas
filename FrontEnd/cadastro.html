@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <script src="https://kit.fontawesome.com/ed7406ea43.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="cadastro.js" defer></script>
+    <script src="menu.js" defer></script>
+    <script type="module" src="cadastrarPessoa.js" defer></script>
+    <script type="module" src="atualizarPessoa.js" defer></script>
+    <script src="validarLogin.js" defer></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script type="module" src="toastr.js" defer></script>
+</head>
+
+<body>
+    <div class="item1">
+        <div class="logo">
+            <img src="img/Fundo.png" alt="logo Lyncas" id='logo-lyncas-img'>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="navbar"><i class='bx bx-grid-alt'></i>Dashboard </a></li>
+                <li><a href="listagem.html" class="navbar"><i class='bx bxs-user-account'></i>Usuários <i
+                            class='bx bx-chevron-right'></i></a></li>
+            </ul>
+        </nav>
+        <button id="btnClose">X</button>
+    </div>
+
+    <div class="item2">
+        <header>
+            <input type="checkbox" id="check">
+            <label for="check" class="menu">
+                <i class="fas fa-align-right"></i>
+            </label>
+            <div class="item3">
+                <div class="lince">
+                    <img src="img/lince-224x547.png" alt="lince" id='lince-img'>
+                </div>
+                <div class="caixa">
+                    <h6 class="nome">Nome do Usuário</h6>
+                    <button class="sair" onclick="Sair()">Sair</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="box2">
+
+            <h6 class="user"></h6>
+
+            <div class="areacadastro">
+                <form action="" class="cadastro" id="cadastro" name="cadastro">
+                    <div class="campo">
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome" onfocusout="validarNome()">
+                        <div class="validacaoNome" id="validacao"></div>
+                    </div>
+                    <div class="campo">
+                        <label>Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" onfocusout="validarSobrenome()">
+                        <div class="validacaoSobrenome" id="validacao"></div>
+                    </div>
+                    <div class="campo">
+                        <label>Telefone</label>
+                        <input type="text" name="phone" id="phone" onkeypress="mascaraTelefone(this, mphone);"
+                            onblur="mascaraTelefone(this, mphone)" onfocusout="validarTelefone()">
+                        <div class="validacaoTelefone" id="validacao"></div>
+                    </div>
+                    <div class="campo">
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="dtnascimento" id="dtnascimento" onfocusout="validarData()">
+                        <div class="validacaoData" id="validacao"></div>
+                    </div>
+                    <div class="campo" id="email">
+                        <label>Email</label>
+                        <input type="text" name="email" id="email3" onfocusout="validarEmail()">
+                        <div class="validacaoEmail" id="validacao"></div>
+                    </div>
+                    <div class="campo">
+                        <label>Senha</label>
+                        <input type="password" name="senha" id="senha" onblur="validarSenha()">
+                        <div class="validacaoSenha" id="validacao"></div>
+                    </div>
+                    <div class="campo">
+                        <label>Repetir Senha</label>
+                        <input type="password" name="repetirsenha" id="repetirsenha" onfocusout="repetirSenha()">
+                        <div class="repeticaoSenha" id="validacao"></div>
+                    </div>
+                    <div class="ativo">
+                        <div class="at1">
+                            <input type="checkbox" id="check2">
+                            <label for="check2" class="lbativo">Ativo</label>
+                        </div>
+                        <button class="cadastrar" id="btnCadastrar" type="submit"
+                            onclick="validarFinal()">Cadastrar</button>
+                        <div class="validarFinal" id="validacao"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

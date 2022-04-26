@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script type="module" src="toastr.js" defer></script>
+    <script type="module" src="validarUsuario.js" defer></script>
+</head>
+
+<body>
+    <div id="login-container">
+        <div class='logo-lyncas'>
+            <img src="img/Logo_Azul2x.png" alt="logo Lyncas" id='logo-lyncas-img'>
+        </div>
+        <div class="header">
+            <h1>LOGIN</h1>
+        </div>
+        <div class='form-login'>
+            <form id="formulario" action="">
+                <input type="email" id="email" placeholder="E-mail" autocomplete="off">
+                <input type="password" id="password" placeholder="Senha" autocomplete="off">
+                <button type="submit" class="log">Log In</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@font-face {
+  src: url("../fontes/MerriweatherSans-Regular.ttf");
+  font-family: MerriweatherRegular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: MerriweatherRegular;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.item1 {
+  background: #0f1b35;
+  width: 200px;
+  height: 100%;
+  float: right;
+}
+
+.logo>img {
+  width: 75%;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  margin-top: 10px;
+  width: 200px;
+  float: right;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 200px;
+  float: right;
+}
+
+a {
+  display: flex;
+  color: whitesmoke;
+  padding: 0.5rem 0.4rem;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+a:hover {
+  background-color: rgb(176, 224, 230);
+  color: black;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bx {
+  margin-right: 10%;
+  font-size: 1.3rem;
+}
+
+.bx-chevron-right {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.item2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 80px 1fr;
+}
+
+#btnClose {
+  display: flex;
+  padding: 5px;
+  background-color: #0f1b35;
+  color: #fff;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.effect {
+  transition: margin 0.5s;
+}
+
+.box2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 30px 0 30px;
+  padding-top: 10%;
+}
+
+@media (min-width: 750px) {
+  #btnClose {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .item1,
+  nav,
+  ul {
+    display: inline;
+    position: absolute;
+  }
+
+  #btnClose {
+    margin-top: 80px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .box2 {
+    margin: 15px 15px 0 15px;
+  }
+}
